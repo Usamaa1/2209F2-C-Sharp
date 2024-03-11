@@ -1,0 +1,14 @@
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\bin\Debug\net6.0\2209F2 Lecture 1.exe
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\bin\Debug\net6.0\2209F2 Lecture 1.deps.json
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\bin\Debug\net6.0\2209F2 Lecture 1.runtimeconfig.json
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\bin\Debug\net6.0\2209F2 Lecture 1.dll
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\bin\Debug\net6.0\2209F2 Lecture 1.pdb
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.AssemblyInfoInputs.cache
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.AssemblyInfo.cs
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.csproj.CoreCompileInputs.cache
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.dll
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\refint\2209F2 Lecture 1.dll
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.pdb
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\2209F2 Lecture 1.genruntimeconfig.cache
+C:\Users\usama\source\repos\2209F2 Lecture 1\2209F2 Lecture 1\obj\Debug\net6.0\ref\2209F2 Lecture 1.dll
