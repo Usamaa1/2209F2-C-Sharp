@@ -448,34 +448,241 @@ while (a >= 2)
 
 
 
-Game supermario = new Game("Super Mario 7", "Nintendo", 2.4, 3);
-Console.WriteLine("{0} {2} {1} {3}",supermario.name,supermario.company, supermario.version,supermario.players);
+// Game supermario = new Game("Super Mario 7", "Nintendo", 2.4, 3);
+// Console.WriteLine("{0} {2} {1} {3}",supermario.name,supermario.company, supermario.version,supermario.players);
 
-Console.WriteLine($"{supermario.name} hfdshfhdsh {supermario.company}");
+// Console.WriteLine($"{supermario.name} hfdshfhdsh {supermario.company}");
 
 
 
+// Console.ReadKey();
+
+
+// class Game(string name, string company, double version, int players)
+// {
+//     public string name = name;
+//     public string company = company;
+//     public double version = version;
+//     public int players= players;
+
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+/*Nintendo supermario = new() { 
+    name = "Super Mario 7",
+    company = "Nintendo Corp",
+    version = 3.4,
+    players = 4
+};
+
+Console.WriteLine(supermario.name);
+Console.WriteLine(supermario.company);
+supermario.gamePrice(3);
+
+supermario.isGameAvailable("Yes");
+
+Ubisoft farcry = new()
+{
+    name = "Far Cry 3",
+    company = "Ubisoft Ind",
+    version = 4.4,
+    players = 2
+};
+
+Console.WriteLine("___________________________________");
+Console.WriteLine(farcry.name);
+
+farcry.isGameAvailable("hfdjsh");
+farcry.gamePrice(3);
+farcry.totalPrice(30);
+
+Console.WriteLine(farcry.ToString());*/
+
+//Console.WriteLine(farcry.genralPrice);
+
+
+/*Console.WriteLine("Enter your Name:");
+
+string a = Console.ReadLine();
+
+Console.WriteLine(a.ToLower());*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 Console.ReadKey();
 
 
-class Game(string name, string company, double version, int players)
+abstract class Game()
 {
-    public string name = name;
-    public string company = company;
-    public double version = version;
-    public int players= players;
+    public string name;
+    public string company;
+    public double version;
+    public int players;
+    protected int genralPrice = 300;
 
-    
+    public virtual void isGameAvailable(string value)
+    {
+    }
+    public void totalPrice(double tax)
+    {
+        Console.WriteLine(tax + genralPrice);
+    }
+}
+
+class Nintendo : Game
+{
+
+    public override void isGameAvailable(string value)
+    {
+
+        if (value == "Yes")
+        {
+            Console.WriteLine("You can download this game. Thank you for Purchasing");
+        }
+        else if (value == "No")
+        {
+            Console.WriteLine("You can not download this game.");
+        }
+        else
+        {
+            Console.WriteLine("Kindly enter valid value");
+        }
+    }
+    public virtual void gamePrice(int quantity)
+    {
+        Console.WriteLine($"Your Nintendo Game the game name is {this.name} total Price is: $.{(quantity * 30) + 23}");
+    }
+    *//*public void totalPrice(double value)
+    {
+        Console.WriteLine(value + genralPrice);
+    }*//*
+
+    public override string ToString()
+    {
+        return $"Game Name: {this.name} \nGame Company: {this.company} \nGame Version: {this.version} \nGame Player: {this.players}";
+    }
+
+
+
+}
+
+class Ubisoft : Nintendo
+{
+
+    public override void isGameAvailable(string value)
+    {
+
+        if (value == "Yes")
+        {
+            Console.WriteLine("You can download this game.");
+        }
+        else if (value == "No")
+        {
+            Console.WriteLine("You can not download this game.");
+        }
+        else
+        {
+            Console.WriteLine("Kindly enter valid value");
+        }
+    }
+    public override void gamePrice(int quantity)
+    {
+        Console.WriteLine($"Your Ubisoft Game the game name is {this.name} total Price is: $.{(quantity * 50) + 30}");
+    }
+}*/
+
+
+
+
+Audionic headphone = new()
+{
+    prodName = "Headset Bluetooth",
+    prodPrice = 2000,
+    prodRating = 2.3
+};
+
+
+HudaBeauty lipstick = new()
+{
+    prodName = "Saeed Ghani Lipstick",
+    prodPrice = 340,
+    prodRating = 4.3
+};
+
+Console.WriteLine(headphone.prodDesc());
+Console.WriteLine(lipstick.prodDesc());
+Console.WriteLine(headphone.totalPrice());
+Console.WriteLine(lipstick.totalPrice());
+Console.WriteLine(lipstick.colors());
+
+
+
+
+interface IElectronics
+{
+    string prodDesc();
+    double totalPrice();
+}
+
+interface ICosmetics
+{
+    string colors();
 }
 
 
+class Audionic : IElectronics
+{
+    public string prodName;
+    public double prodRating;
+    public double prodPrice;
+    public string prodDesc()
+    {
+        return $"Product Name: {this.prodName} \nProduct Rating: {this.prodRating} \nProduct Price: {this.prodPrice}";
+    }
+    public double totalPrice()
+    {
+        return this.prodPrice + 23;
+    }
+}
 
-
-
-
-
-
-
+class HudaBeauty : IElectronics, ICosmetics
+{
+    public string prodName;
+    public double prodRating;
+    public double prodPrice;
+    public string prodDesc()
+    {
+        return $"Product Name: {this.prodName} \nProduct Rating: {this.prodRating} \nProduct Price: {this.prodPrice}";
+    }
+    public double totalPrice()
+    {
+        return this.prodPrice + 23;
+    }
+    public string colors()
+    {
+        return "Red, Purple, Pink, Red, Blue, Magenda";
+    }
+}
 
 
 
