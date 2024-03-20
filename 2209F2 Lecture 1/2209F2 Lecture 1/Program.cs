@@ -688,6 +688,152 @@ class HudaBeauty : IElectronics, ICosmetics
 
 
 
+//Console.WriteLine((int)days.Wednesday);
+
+//int userInput = Convert.ToInt32(Console.ReadLine());
+
+
+/*days input = days.DAY;
+
+
+switch(input)
+    {
+        case days.Monday:
+            Console.WriteLine("Today is Monday");
+            break;
+        case days.Tuesday:
+            Console.WriteLine("Today is Monday");
+            break;
+        case days.Wednesday:
+            Console.WriteLine("Today is Monday");
+            break;
+        case days.Thursday:
+            Console.WriteLine("Today is Monday");
+            break;
+        case days.Friday:
+            Console.WriteLine("Today is Friday");
+            break;
+        case days.Saturday:
+            Console.WriteLine("Today is Saturday");
+            break;
+        case days.Sunday:
+        Console.WriteLine("Today is Sunday");
+            break;
+        default:
+        Console.WriteLine("Kindly Enter valid value");
+        break;
+}
+
+
+
+
+
+enum days
+{
+    Monday = 90,
+    Tuesday = 25,
+    Wednesday = 66, 
+    Thursday = 87,
+    Friday = 98,
+    Saturday = 56,
+    Sunday = 45,
+    DAY
+
+}*/
+
+
+using System.Collections.Generic;
+
+/*List<string> names = new List<string>();
+names.Add("Arif");
+names.Add("Zahid");
+names.Add("Akmal");
+names.Add("Haris");
+names.Add("Safdar");
+names.Add("Polard");
+
+
+
+List<int> nums = new List<int>();
+nums.Add(1);
+nums.Add(3);
+nums.Add(4);
+nums.Add(7);
+nums.Add(10);
+nums.Add(14);
+
+
+Print.printAll(names);
+
+
+class Print
+{
+    public static void printAll<T>(List<T> value)
+    {
+        foreach(T item in value)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+*/
+
+
+
+
+Products headphone = new();
+headphone[0] = 1;
+headphone[1] = 6;
+//headphone[2] = 4;
+//headphone[3] = 3;
+//headphone[4] = 5.1;
+
+
+//Console.WriteLine(headphone[0]);
+Console.WriteLine(headphone[1]);
+
+for (int i = 0; i <= 100; i++)
+{
+
+    Console.WriteLine(headphone[i]);
+}
+
+
+
+class Products
+{
+  private double[] ratings = new double[100];
+
+    public double this[int index]
+    {
+        get 
+        {
+
+            //if (ratings[index] > 0)
+            //{
+            //    return ratings[index];
+            //}
+            return ratings[index];
+        }
+        set 
+        {
+            if(value > 0 && value <= 5) 
+            {
+                ratings[index] = value;
+                Console.WriteLine(ratings[index]);
+            }
+            else
+            {
+                Console.WriteLine("Enter ratings between 0 to 5");
+            }
+            
+        }
+    }
+
+
+}
+
+
 
 
 
