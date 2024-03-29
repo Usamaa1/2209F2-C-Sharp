@@ -834,7 +834,50 @@ class Products
 }
 
 
+//Delegates
 
+
+
+
+
+Maths.Calculator Calculation;
+
+
+Calculation = Maths.Add;
+
+Console.WriteLine(Calculation(3,4));
+
+Calculation = Maths.Minus;
+
+Console.WriteLine(Calculation(3,4));
+
+
+
+Console.ReadKey();
+
+
+class Maths
+{
+    public delegate double Calculator(double a, double b);
+
+    public static double Add(double a, double b)
+    {
+        return a + b;
+    }
+
+    public static double Minus(double a, double b)
+    {
+        return a - b;
+    }
+    public static double Multiply(double a, double b)
+    {
+        return a * b;
+    }
+    public static double Divide(double a, double b)
+    {
+        return a / b;
+    }
+}
 
 
 
